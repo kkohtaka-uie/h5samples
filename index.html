@@ -1,1 +1,40 @@
-src/index.html
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML5 Sample Applications</title>
+    <style>
+      div#swipe-target {
+        background-color: lightgray;
+        border-radius: 10px;
+      }
+      p#message-box {
+        margin: 0;
+        padding: 120px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="swipe-target">
+      <p id="message-box">
+        Swipe me
+      </p>
+    </div>
+    <script src="js/vendor/jquery-1.9.1.min.js"></script>
+    <script src="js/vendor/jquery.hammer.min.js"></script>
+    <script>
+      $(function () {
+        var messageBox = $('#message-box');
+        function log(direction, pointer) {
+          messageBox.text('You swiped "' + direction + '" with "' + pointer + '"');
+        }
+        $('#swipe-target').hammer().on('swipe', function (event) {
+          log(event.gesture.direction, event.gesture.pointerType);
+        });
+      });
+    </script>
+  </body>
+</html>
