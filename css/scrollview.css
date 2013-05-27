@@ -13,7 +13,7 @@
   margin: 0;
   width: 400px;
   height: 2400px;
-  background-image: url(/img/grid.png);
+  background-image: url(../img/grid.png);
   overflow: hidden;
 }
 
