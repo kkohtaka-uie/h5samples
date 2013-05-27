@@ -1,0 +1,23 @@
+{
+  "name": "h5samples",
+  "version": "0.0.0",
+  "description": "HTML5 Sample Applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kkohtaka/h5samples.git"
+  },
+  "author": "Kazumasa Kohtaka <kkohtaka@uievolution.com>",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "grunt": "0.4.1",
+    "grunt-cli": "0.1.7",
+    "grunt-contrib-connect": "0.2.0",
+    "grunt-contrib-livereload": "0.1.2",
+    "grunt-regarde": "0.1.1"
+  }
+}

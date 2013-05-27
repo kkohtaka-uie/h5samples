@@ -1,0 +1,26 @@
+/* regulation.css */
+
+/* SDK Button */
+.sdk-scrollview {
+  margin: 40px;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border: 3px solid black;
+}
+
+.sdk-scrollview > * {
+  margin: 0;
+  width: 400px;
+  height: 2400px;
+  background-image: url(/img/grid.png);
+  overflow: hidden;
+}
+
+.sdk-scrollview img {
+  pointer-events: none;
+}
+
+img.dummy {
+  margin: 20px;
+}
